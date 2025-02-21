@@ -6,8 +6,7 @@ import java.util.*;
 		 
 		 
 	     public static void main(String[] args) {
-	         Scanner sc = new Scanner(System.in); // Criando Scanner dentro do método main
-
+	         Scanner sc = new Scanner(System.in); 
 	         System.out.println("Digite um número:");
 	         int num1 = sc.nextInt();
 	         
@@ -16,7 +15,7 @@ import java.util.*;
 	         
 	         int soma = num1 + num2;
 	         
-	         System.out.println("Soma: " + soma); // Adicionando um espaço para melhorar a formatação
+	         System.out.println("Soma: " + soma); 
 	         
 	       
 	     }

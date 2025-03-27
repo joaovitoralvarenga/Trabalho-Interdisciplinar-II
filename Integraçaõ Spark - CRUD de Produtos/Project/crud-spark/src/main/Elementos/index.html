@@ -29,22 +29,25 @@
     </div>
 
     <div class="busca">
-
         <h2>Buscar Produto</h2>
-    <label for="produto-id">ID do Produto:</label>              
-    <input type="number" id="produto-id">
-    <button onclick="buscarProduto()">Buscar</button>
-
-    </div>  
-   
+        <label for="produto-id">ID do Produto:</label>              
+        <input type="number" id="produto-id">
+        <button onclick="buscarProduto()">Buscar</button>
     
-
-    <div id="produto-info"></div>
-<div class="lista-titulo">
-    <h2>Lista de Produtos</h2>
-</div>
+    </div>
    
-    <button onclick="listarProdutos()">Listar Produtos</button>
+   
+    <div id="produto-info"></div>
+
+    <div class="titulo">
+        <h2 id = "lista-produtos-titulo">Lista de Produtos</h2>
+    </div>
+
+    <div class="botao">
+        <button onclick="listarProdutos()">Listar Produtos</button>
+    </div>
+    
+    
     <div id="produtos-list"></div>
 
     <!-- Inclusão do arquivo JS -->

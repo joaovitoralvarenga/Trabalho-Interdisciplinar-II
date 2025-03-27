@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Iansui&family=Oswald:wght@200..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Iansui&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 :root {
 background-color: rgb(243, 255, 211);
@@ -30,13 +33,6 @@ background-color: rgb(243, 255, 211);
     
 }
 
-#Form {
-    text-align: center;
-    font-weight: 800;
-    font-size: 30px;
-    color: rgb(117, 90, 57);
-}
-
 #form-insert input {
     width: 90%;
     background: beige;
@@ -46,7 +42,40 @@ background-color: rgb(243, 255, 211);
     margin-top: 15px;
     box-shadow: rgba(95, 73, 31, 0.878) 0px 10px 10px -5px;
     border-inline: 2px solid transparent;
+    
 }
 
+#form-insert button {
+
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, beige, rgb(179, 140, 83) 100%);
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: rgba(95, 73, 31, 0.878) 0px 10px 10px -5px;
+    transition: all 0.2s ease-in-out;
+    color: rgb(117, 90, 57);
+    cursor: grab;
+    
+
+}
+
+#form-insert label {
+    font-weight: bold;
+    color: rgb(117, 90, 57);
+}
+
+
+
+
+#Form {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(117, 90, 57);
+    font-family: 'Bebas Neue', sans-serif;
+}
 
 

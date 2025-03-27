@@ -168,7 +168,7 @@ background-color: rgb(243, 255, 211);
     position: relative;
     margin:20px auto;
     right: 500px;
-    bottom: 650px;
+    bottom: 700px;
    
     width: 80%;
     max-width: 400px; /* Reduz o tamanho da lista */
@@ -231,11 +231,28 @@ background-color: rgb(243, 255, 211);
     border-radius: 20px;
     box-shadow: rgba(95, 73, 31, 0.878) 0px 10px 10px -5px;
     transition: all 0.2s ease-in-out;
-    color: white;
+    color: rgb(117, 90, 57);
     cursor: grab;
 
 
 }
+
+.package {
+    position: relative;
+    margin: 20px auto;
+    width: 30px;
+    width: 30px;
+    bottom:785px;
+    right: 680px;
+}
+
+.package img {
+    width: 30px;
+    height: 30px;
+
+}
+
+
 
 
 

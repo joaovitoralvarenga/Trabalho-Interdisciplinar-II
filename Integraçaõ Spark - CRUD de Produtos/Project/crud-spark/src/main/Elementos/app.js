@@ -30,7 +30,7 @@ document.getElementById('form-insert').addEventListener('submit', function(event
         console.log(data);
         
         // Atualiza a lista de produtos sem exibir a mensagem de sucesso
-        
+        listarProdutos(false);
     })
     .catch(error => {
         console.error('Erro ao inserir produto:', error);
@@ -86,11 +86,11 @@ function listarProdutos(exibirMensagem = true) {
                     <p>Nome: ${produto.nome}</p>
                     <p>Preço: ${produto.preco}</p>
                     <p>Quantidade: ${produto.quantidade}</p>
+                    <button onclick="deletarProduto(${produto.id})">Deletar</button>
                     <hr>
                 `;
             });
 
-            // Exibe a mensagem apenas se for chamado diretamente pelo usuário
             if (exibirMensagem) {
                 alert("Produtos listados com sucesso!");
             }
@@ -98,4 +98,30 @@ function listarProdutos(exibirMensagem = true) {
         .catch(error => {
             console.error('Erro ao listar produtos:', error);
         });
+}
+
+// Função para deletar um produto
+function deletarProduto(id) {
+    if (!confirm(`Tem certeza que deseja deletar o produto com ID ${id}?`)) {
+        return;
+    }
+
+    fetch(`http://localhost:4567/produto/delete/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert(`Produto com ID ${id} deletado com sucesso!`);
+            listarProdutos(false); // Atualiza a lista sem exibir a mensagem de sucesso
+        } else {
+            throw new Error(`Erro ao deletar produto. Status: ${response.status}`);
+        }
+    })
+    .catch(error => {
+        console.error('Erro ao deletar produto:', error);
+        alert('Erro ao deletar produto. Verifique o console.');
+    });
 }

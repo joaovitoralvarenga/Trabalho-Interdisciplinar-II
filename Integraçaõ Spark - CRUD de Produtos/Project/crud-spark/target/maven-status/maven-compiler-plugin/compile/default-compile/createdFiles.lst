@@ -1,6 +1,8 @@
-com/app/App.class
-com/app/ProdutoDao.class
-com/app/ProdutoApi.class
-com/app/Database.class
-com/app/Produto.class
-com/app/Main.class
+app/Aplicacao.class
+Response/StandardResponse$StatusResponse.class
+Api/ProdutoService.class
+Dao/DAO.class
+Dao/ProdutoDAO.class
+Modelo/Produto.class
+Response/CorsFilter.class
+Response/StandardResponse.class

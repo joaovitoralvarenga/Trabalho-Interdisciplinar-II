@@ -1,24 +1,28 @@
-package com.app;
-
-import java.math.BigDecimal;
+package Modelo;
 
 public class Produto {
     private int id;
     private String nome;
-    private BigDecimal preco;
+    private double preco;
     private int quantidade;
-
-    // Construtores, Getters e Setters
-    public Produto() {}
-
-    public Produto(int id, String nome, BigDecimal preco, int quantidade) {
+    
+    // Construtor que será utilizado para criar um Produto sem ID (para inserção)
+    public Produto(String nome, double preco, int quantidade) {
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidade = quantidade;
+    }
+    
+    // Construtor que será utilizado para criar um Produto com ID (para atualização)
+    public Produto(int id, String nome, double preco, int quantidade) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
     }
 
-    // Getters and Setters
+    // Getters e setters para cada atributo
+
     public int getId() {
         return id;
     }
@@ -35,11 +39,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public BigDecimal getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(BigDecimal preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 

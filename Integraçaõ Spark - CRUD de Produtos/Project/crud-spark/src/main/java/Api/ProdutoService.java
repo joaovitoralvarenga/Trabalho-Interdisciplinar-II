@@ -45,7 +45,7 @@ public class ProdutoService {
             data = gson.toJson(resposta);
             response.status(404); // 404 Não encontrado
         }
-        return data;
+        return data; 
     }
     
     public String insert(Request request, Response response) {
@@ -57,6 +57,7 @@ public class ProdutoService {
         String nome = requestJson.get("nome").getAsString();
         double preco = requestJson.get("preco").getAsDouble();
         int quantidade = requestJson.get("quantidade").getAsInt();
+        
         
         Produto produto = new Produto(nome, preco, quantidade);
         

@@ -3,6 +3,8 @@ document.getElementById('form-insert').addEventListener('submit', function(event
     const nome = document.getElementById('nome').value;
     const preco = document.getElementById('preco').value;
     const quantidade = document.getElementById('quantidade').value;
+    
+    
 
     fetch('http://localhost:4567/produto/insert', {
         method: 'POST',

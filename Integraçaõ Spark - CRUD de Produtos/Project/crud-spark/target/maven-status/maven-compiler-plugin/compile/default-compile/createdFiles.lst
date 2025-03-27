@@ -1,1 +1,6 @@
 com/app/App.class
+com/app/ProdutoDao.class
+com/app/ProdutoApi.class
+com/app/Database.class
+com/app/Produto.class
+com/app/Main.class

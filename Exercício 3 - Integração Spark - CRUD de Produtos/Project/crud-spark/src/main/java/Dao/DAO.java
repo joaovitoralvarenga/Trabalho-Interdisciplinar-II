@@ -16,7 +16,7 @@ public class DAO {
         int porta = 5432;  // Porta do PostgreSQL
         String url = "jdbc:postgresql://" + serverName + ":" + porta + "/" + mydatabase;  // URL de conexão
         String username = "postgres";  // Nome de usuário do PostgreSQL
-        String password = "123";  // Senha do banco de dados
+        String password = "1234";  // Senha do banco de dados
         boolean status = false;
 
         try {

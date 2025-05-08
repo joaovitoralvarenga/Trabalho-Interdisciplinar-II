@@ -1,7 +1,7 @@
 app/Aplicacao.class
 Response/StandardResponse$StatusResponse.class
-Api/ProdutoService.class
 Dao/DAO.class
+Api/ProdutoService.class
 Dao/ProdutoDAO.class
 Modelo/Produto.class
 Response/CorsFilter.class
